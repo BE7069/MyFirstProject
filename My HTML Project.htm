@@ -1,0 +1,706 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>My First HTML</title>
+  <meta charset="UTF-8">
+  <style>
+  a:link {color: green;
+  background-color: transparent;
+  text-decoration: none;
+  }
+  a:visited {color: pink;
+  background-color: transparent;
+  text-decoration: none;
+  }
+  a:hover {color: red;
+  background-color: transparent;
+  text-decoration: none;
+  }
+  a:active {color: yellow;
+  background-color: transparent;
+  text-decoration: none;
+  }
+  .quote {
+       background-color: black;
+	   color: white;
+	   padding: 20px;
+	   }
+   #myHeader {
+     background-color: lightblue;
+	 color: black;
+	 padding: 40px;
+	 text-align: center;
+	 }
+  </style>
+</head>
+<!--body style="background-color:powderblue;"-->
+
+<!-- Colours -->
+<p>Background colours</p>
+<h1 style="background-color:Tomato;">Tomato</h1>
+<h1 style="background-color:Orange;">Orange</h1>
+<h1 style="background-color:DodgerBlue;">DodgerBlue</h1>
+<h1 style="background-color:MediumSeaGreen;">MediumSeaGreen</h1>
+<h1 style="background-color:Gray;">Gray</h1>
+<h1 style="background-color:SlateBlue;">SlateBlue</h1>
+<h1 style="background-color:Violet;">Violet</h1>
+<h1 style="background-color:LightGray;">LightGray</h1>
+ <!-- Background-color will give the background of the heading or paragraph a specific colour - <br>
+ block of colour.<br>
+color will colour the text alone -->
+<p>Text colours</p>
+<h1 style="color:Tomato;">Hello World</h1>
+<p style="color:DodgerBlue;">Lorem ipsum...</p>
+
+<p>Border colours</p>
+<h1 style="border:2px solid Tomato;">Hello World</h1>
+<h1 style="border:2px solid DodgerBlue;">Hello World</h1>
+<h1 style="border:2px solid Violet;">Hello World</h1>
+
+<p>Colour values</p>
+<h1 style="background-color:rgb(255, 99, 71);">...</h1>
+<h1 style="background-color:#ff6347;">...</h1>
+<h1 style="background-color:hsl(9, 100%, 64%);">...</h1>
+<p>Same colour but 50% transparent</p>
+<h1 style="background-color:rgba(255, 99, 71, 0.5);">...</h1>
+<h1 style="background-color:hsla(9, 100%, 64%, 0.5);">...</h1>
+
+<p>In addition to the predefined color names, colors can be specified using RGB, HEX, HSL, or even transparent colors using RGBA or HSLA color values.</p>
+
+<!-- RGB Value
+In HTML, a color can be specified as an RGB value, using this formula:
+
+rgb(red, green, blue)
+
+Each parameter (red, green, and blue) defines the intensity of the color between 0 and 255.
+
+For example, rgb(255, 0, 0) is displayed as red, because red is set to its highest value (255) and the others are set to 0.
+
+To display the color black, all color parameters must be set to 0, like this: rgb(0, 0, 0).
+
+To display the color white, all color parameters must be set to 255, like this: rgb(255, 255, 255)
+Shades of gray are often defined using equal values for all the 3 light sources:
+black = rgb(0,0,0) white = rgb(255, 255, 255) -->
+
+<hr>
+<h1 style="font-size:60px;">Learning HTML, My First Heading</h1>
+
+<h2>Heading 2</h2>
+<h3>Heading 3</h3>
+<h4 style="font-family:verdana;">Heading 4</h4>
+<h5>Heading 5</h5>
+<h6>Heading 6</h6>
+
+<p>My first paragraph while learning how to use HTML.</p>
+
+<p style="color:red">This is a red paragraph</p>
+<p style="background-image:url('clouds.jpg')">This paragraph has a background</p>
+<p title="Testing titles"> 
+Definition of paragraph</p>
+
+<a href="http://fallfordiy.com/?s=weaving+loom" title="Go to DIY website">This is a link</a>
+<a href="http://fallfordiy.com/?s=weaving+loom" target="-blank">Try something new</a>
+<a href="http://fallfordiy.com/?s=weaving+loom">
+  <img src="Weaving-Tutorial.jpg" alt="Weave tutorial" 
+  style="width:42px;height:42px;border:0;">
+</a>
+<a href="http://fallfordiy.com/?s=weaving+loom"><button>Click me</button></a>
+<hr>
+<H3>Using ID atrtribute in jacaScript</h3>
+<p>JavaScript can access an element with a specified id by using the getElementById() method:</p>
+
+<h1 id="newHeader">Hello world!<h1>
+<button onclick="displayResult()">Change text</button>
+
+<script>
+function displayResult() {
+    document.getElementById("newHeader").innerHTML = "Have a nice day!";
+}
+</script>
+<hr>
+<button>Click me</button>
+<hr>
+<h2 id="lists">Lists</h2>
+<h5>Unordered list</h5>
+<ul>
+<li>Venue</li>
+<li>Gate motor</li>
+<li>Fencing</li>
+</ul>
+<h5>Ordered list</h5>
+<ol>
+<li>Gate motor</li>
+<li>Fencing</li>
+<li>Venue</li>
+</ol>
+<hr>
+<h5>Bullets (default)</h5>
+<ul style="list-style-type:disc">
+<li>Venue</li>
+<li>Gate motor</li>
+<li>Fencing</li>
+</ul>
+<hr>
+<h5>Circles</h5>
+<ul style="list-style-type:circle">
+<li>Venue</li>
+<li>Gate motor</li>
+<li>Fencing</li>
+</ul>
+<hr>
+<h5>Square</h5>
+<ul style="list-style-type:square">
+<li>Venue</li>
+<li>Gate motor</li>
+<li>Fencing</li>
+</ul>
+<hr>
+<h5>None</h5>
+<ul style="list-style-type:none">
+<li>Venue</li>
+<li>Gate motor</li>
+<li>Fencing</li>
+</ul>
+<hr>
+<h5>Numbers</h5>
+<ol type="1">
+<li>Venue</li>
+<li>Gate motor</li>
+<li>Fencing</li>
+</ol>
+<hr>
+<h5>Uppercase letters</h5>
+<ol type="A">
+<li>Venue</li>
+<li>Gate motor</li>
+<li>Fencing</li>
+</ol>
+<hr>
+<h5>Lower case letters</h5>
+<ol type="a">
+<li>Venue</li>
+<li>Gate motor</li>
+<li>Fencing</li>
+</ol>
+<hr>
+<h5>Uppercase Roman Numbers</h5>
+<ol type="I">
+<li>Venue</li>
+<li>Gate motor</li>
+<li>Fencing</li>
+</ol>
+<hr>
+<h5>Lower case roman Numbers</h5>
+<ol type="i">
+<li>Venue</li>
+<li>Gate motor</li>
+<li>Fencing</li>
+</ol>
+<hr>
+<h5>Description list</h5>
+<dl>
+<dt>Venue</dt>
+<dd>- Kids parties</dd>
+<dt>Gate motor</dt>
+<dd>- Electric remote</dd>
+<dt>Fencing</dt>
+<dd>- Around property for safety</dd>
+</ol>
+<hr>
+<h5>Nested list</h5>
+<ul>
+<li>Venue</li>
+<li>Gate motor</li>
+<li>Fencing
+  <ul>
+    <li>Electric</li>
+	<li>Palisade</li>
+	<li>Precast</li>
+	</ul>
+	</li>
+<li>Ramp</li>
+</ul>
+<hr>
+<p style="text-align:center";>Centered paragraph.</p>
+
+
+<hr> 
+<h1 id="myHeader">Text Formatting</h1>
+<p>This is Normal text</p>
+<p>This is <b>Bold</b> text</p>
+<p>This is <strong>Important</strong> text</p>
+<p>This is <i>Italic</i> text</p>
+<p>This is <em>Emphasized</em> text</p>
+<p>This is <mark>Marked</mark> text</p>
+<p>This is <small>Small</small> text</p>
+<p>This is <del>Deleted</del> text</p>
+<p>This is <ins>Inserted</ins> text</p>
+<p>This is <sub>Subscript</sub> text</p>
+<p>This is <sup>Superscript</sup> text</p>
+
+<hr>
+<h1>Quotes</h1>
+<p>This is a quote: <q>Make hay while the sun shines</q></p>
+
+<p class="quote">This is s website quote:</p>
+<blockquote cite="http://www.wordwildlife.org/who/index.html">
+For 50 years, WWF has been protecting the future of nature.
+The world's leading conservation organization,
+WWF works in 100 countries and is supported by
+1.2 million members in the United States and
+close to 5 million globally.
+</blockquote>
+
+<p>I work in the <abbr title="Telesure Technology Services">TTS</abbr> department of Telesure.</p>
+<address>
+Auto & General Park<br>
+Block 4C<br>
+1 Telesure lane<br>
+Riverglen<br>
+Dainfern</br>
+2191
+</address>
+<!-- This is just a comment and will not display -->
+<p>Bi-Directional Override.  Words get written from right to left</p>
+<p><bdo dir="rtl">This text will be written from right to left</bdo></p>
+
+a href="#top">to top</a>
+
+</body>
+</html>
+
+<br />
+<img src="Dim Raft 28 jan 18_50.jpg" alt="Image not found" width="1200" height="999">
+<p><cite>River Rafting</cite> a fun experience</p>
+<br />
+
+<hr>
+<h1>Forms</h1>
+<!--Input types = text, radio, submit -->
+<h3>Text input</h3>
+<form>
+First name:<br>
+<input type="text" name="firstname"><br>
+Last name:<br>
+<input type="text" name="lastname">
+</form>
+
+<h3>Radio button input</h3>
+<form>
+<input type="radio" name="gender" value="male" checked> Male<br>
+<input type="radio" name="gender" value="female"> Female<br>
+<input type="radio" name="gender" value="other"> Other
+</form>
+
+<h3>Submit button</h3>
+<form action="/action_page.php">
+  First name:<br>
+  <input type="tect" name="firstname" value="Mickey"><br>
+  Last name:<br>
+  <input type="text" name="lastname" value="Mouse"><br><br>
+  <input type="submit" value="Submit">
+</form>
+
+<h3>Open in new screen</h3?
+<form action="/action_page.php" target="_blank">
+First name:<br>
+<input type="text" name="firstname"><br>
+Last name:<br>
+<input type="text" name="lastname">
+</form>
+
+
+<h3>Method</h3?
+<form action="/action_page.php" method="get">
+First name:<br>
+<input type="text" name="firstname"><br>
+Last name:<br>
+<input type="text" name="lastname">
+</form>
+
+<h3>Fieldset>
+<form action="/action_page.php">
+  <fieldset>
+    <legend>Personal information:</legend>
+    First name:<br>
+    <input type="text" name="firstname" value="Mickey"><br>
+    Last name:<br>
+    <input type="text" name="lastname" value="Mouse"><br><br>
+    <input type="submit" value="Submit">
+  </fieldset>
+</form>
+
+<a href="#lists">Jump to lists</a>
+
+<hr>
+<h1>Tables</h1>
+<table style="width:100%">
+  <tr>
+    <th>Firstname</th>
+    <th>Lastname</th> 
+    <th>Age</th>
+  </tr>
+  <tr>
+    <td>Jill</td>
+    <td>Smith</td> 
+    <td>50</td>
+  </tr>
+  <tr>
+    <td>Eve</td>
+    <td>Jackson</td> 
+    <td>94</td>
+  </tr>
+</table>
+
+
+
+<h2>Bordered Table</h2>
+<p>Use the CSS border property to add a border to the table.</p>
+
+<table style="width:100%"
+
+table, th, td {
+    border: 1px solid black;
+}>
+
+  <tr>
+    <th>Firstname</th>
+    <th>Lastname</th> 
+    <th>Age</th>
+  </tr>
+  <tr>
+    <td>Jill</td>
+    <td>Smith</td> 
+    <td>50</td>
+  </tr>
+  <tr>
+    <td>Eve</td>
+    <td>Jackson</td> 
+    <td>94</td>
+  </tr>
+</table>
+
+
+
+
+
+
+
+
+<h2>Collapsed Bordered Table</h2>
+
+<table style="width:100%">
+<style>
+table, th, td {
+    border: 1px solid black;
+	boder-collapse: collapse;
+}
+</style>
+  <tr>
+    <th>Firstname</th>
+    <th>Lastname</th> 
+    <th>Age</th>
+  </tr>
+  <tr>
+    <td>Jill</td>
+    <td>Smith</td> 
+    <td>50</td>
+  </tr>
+  <tr>
+    <td>Eve</td>
+    <td>Jackson</td> 
+    <td>94</td>
+  </tr>
+</table>
+
+
+<head>
+<style>
+table, th, td {
+    border: 1px solid black;
+	boder-collapse: collapse;
+}
+th, td {
+padding: 15px;
+}
+
+</style>
+</head>
+<body>
+
+<h2>Cell padding</h2>
+
+table style="width:100%">
+  <tr>
+    <th>Firstname</th>
+    <th>Lastname</th> 
+    <th>Age</th>
+  </tr>
+  <tr>
+    <td>Jill</td>
+    <td>Smith</td> 
+    <td>50</td>
+  </tr>
+  <tr>
+    <td>Eve</td>
+    <td>Jackson</td> 
+    <td>94</td>
+  </tr>
+</table>
+</body>
+
+
+
+<style>
+table, th, td {
+    border: 1px solid black;
+	boder-collapse: collapse;
+}
+th, td {
+  padding: 5px;
+  }
+  th {
+  text-align: left;
+  }
+  
+</style>
+
+
+<h2>Text alignment left</h2>
+
+table style="width:100%">
+  <tr>
+    <th>Firstname</th>
+    <th>Lastname</th> 
+    <th>Age</th>
+  </tr>
+  <tr>
+    <td>Jill</td>
+    <td>Smith</td> 
+    <td>50</td>
+  </tr>
+  <tr>
+    <td>Eve</td>
+    <td>Jackson</td> 
+    <td>94</td>
+  </tr>
+</table>
+
+
+<head>
+<style>
+table, th, td {
+    border: 1px solid black;
+    padding: 5px;
+}
+table {
+    border-spacing: 15px;
+}
+</style>
+</head>
+<body>
+
+<h2>Border Spacing</h2>
+<p>Border spacing specifies the space between the cells.</p>
+
+<table style="width:100%">
+  <tr>
+    <th>Firstname</th>
+    <th>Lastname</th> 
+    <th>Age</th>
+  </tr>
+  <tr>
+    <td>Jill</td>
+    <td>Smith</td>
+    <td>50</td>
+  </tr>
+  <tr>
+    <td>Eve</td>
+    <td>Jackson</td>
+    <td>94</td>
+  </tr>
+  <tr>
+    <td>John</td>
+    <td>Doe</td>
+    <td>80</td>
+  </tr>
+</table>
+
+<p>Try to change the border-spacing to 5px.</p>
+
+</body>
+
+
+<h3>table - cells spanning serveral columns</h3>
+
+<table style="width:100%">
+  <tr>
+    <th>Name</th>
+    <th colspan="2">Telephone</th>
+  </tr>
+  <tr>
+    <td>Bill Gates</td>
+    <td>55577854</td>
+    <td>55577855</td>
+  </tr>
+</table>
+
+<h3>table - cells spanning serveral rows</h3>
+<table style="width:100%">
+  <tr>
+    <th>Name:</th>
+    <td>Bill Gates</td>
+  </tr>
+  <tr>
+    <th rowspan="2">Telephone:</th>
+    <td>55577854</td>
+  </tr>
+  <tr>
+    <td>55577855</td>
+  </tr>
+</table>
+
+<h3>Adding a caption</h3>
+<table style="width:100%">
+  <caption>Monthly savings</caption>
+  <tr>
+    <th>Month</th>
+    <th>Savings</th>
+  </tr>
+  <tr>
+    <td>January</td>
+    <td>$100</td>
+  </tr>
+  <tr>
+    <td>February</td>
+    <td>$50</td>
+  </tr>
+</table>
+
+<h3>Special style to a table</h3>
+<table style="width:100%">
+  <caption>Monthly savings</caption>
+  <tr>
+    <th>Month</th>
+    <th>Savings</th>
+  </tr>
+  <tr>
+    <td>January</td>
+    <td>$100</td>
+  </tr>
+  <tr>
+    <td>February</td>
+    <td>$50</td>
+  </tr>
+</table>
+
+<h3>More colours</h3>
+<head>
+<style>
+table {
+    width:100%;
+}
+table, th, td {
+    border: 1px solid black;
+    border-collapse: collapse;
+}
+th, td {
+    padding: 15px;
+    text-align: left;
+}
+table#t01 tr:nth-child(even) {
+    background-color: #eee;
+}
+table#t01 tr:nth-child(odd) {
+   background-color: #fff;
+}
+table#t01 th {
+    background-color: black;
+    color: white;
+}
+</style>
+</head>
+<body>
+
+<h2>Styling Tables</h2>
+
+<table>
+  <tr>
+    <th>Firstname</th>
+    <th>Lastname</th> 
+    <th>Age</th>
+  </tr>
+  <tr>
+    <td>Jill</td>
+    <td>Smith</td>
+    <td>50</td>
+  </tr>
+  <tr>
+    <td>Eve</td>
+    <td>Jackson</td>
+    <td>94</td>
+  </tr>
+  <tr>
+    <td>John</td>
+    <td>Doe</td>
+    <td>80</td>
+  </tr>
+</table>
+<br>
+
+<table id="t01">
+  <tr>
+    <th>Firstname</th>
+    <th>Lastname</th> 
+    <th>Age</th>
+  </tr>
+  <tr>
+    <td>Jill</td>
+    <td>Smith</td>
+    <td>50</td>
+  </tr>
+  <tr>
+    <td>Eve</td>
+    <td>Jackson</td>
+    <td>94</td>
+  </tr>
+  <tr>
+    <td>John</td>
+    <td>Doe</td>
+    <td>80</td>
+  </tr>
+</table>
+
+
+<hr>
+<h2>HTML Iframes</h2>
+<p>You can use the height and width attributes to specify the size of the iframe:</p>
+
+<iframe src="demo_iframe.htm" height="200" width="300"></iframe>
+
+<h2>HTML Iframes</h2>
+<p>You can also use the CSS height and width properties to specify the size of the iframe:</p>
+
+<iframe src="demo_iframe.htm" style="height:200px;width:300px"></iframe>
+
+<h2>Remove the Iframe Border</h2>
+<p>To remove the default border of the iframe, use CSS:</p>
+
+<iframe src="demo_iframe.htm" style="border:none;"></iframe>
+
+<h2>Custom Iframe Border</h2>
+<p>With CSS, you can also change the size, style and color of the iframe's border:</p>
+
+<iframe src="demo_iframe.htm" style="border:2px solid red;"></iframe>
+
+
+<h2>Iframe - Target for a Link</h2>
+
+<iframe height="300px" width="100%" src="demo_iframe.htm" name="iframe_a"></iframe>
+
+<p><a href="http://www.fallfordiy.com" target="iframe_a">FallforDIY.com</a></p>
+
+<p>When the target of a link matches the name of an iframe, the link will open in the iframe.</p>
+
+
+
